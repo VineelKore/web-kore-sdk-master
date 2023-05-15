@@ -3022,3 +3022,8 @@
 #kr_chatContainer{
     display: none;/*remove this minimizeMode false*/
 }
+
+
+.greenTxt{
+    color:green;
+}

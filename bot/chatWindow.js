@@ -617,7 +617,14 @@
                                 }
                                 if(validBoldGroup){
                                     _boldTxt = _boldTxt.substring(1, _boldTxt.length - 1);
-                                    _boldTxt = '<b>' + _boldTxt.trim() + '</b>';
+
+                                    if(i==3 && txtArr[i].includes("In Stock")){
+                                        console.log(txtArr[i]);
+                                        _boldTxt = '<b class="greenTxt">' + "In Stock" + '</b>' + _boldTxt.replace(/In Stock/gi,"");
+                                    }else{
+                                        _boldTxt = '<b>' + _boldTxt.trim() + '</b>';
+                                    }
+                                   
                                     txtArr[i] = txtArr[i].replace(_matchAstrik[j], _boldTxt);
                                 }
                             }
