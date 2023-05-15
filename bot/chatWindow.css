@@ -1800,7 +1800,7 @@
     font-weight: 600;
     line-height: 1.54;
     letter-spacing: -0.1px;
-    text-align: left;
+    text-align: center;
     color: var(--sdk-chat-window-bot-bubble-font-clr);
     max-width: 230px;
     text-overflow: ellipsis;
@@ -1842,6 +1842,7 @@
     color: #0076ff;
     cursor: pointer;
     max-width: 242px;
+    font-weight: bold;
     padding-top: 13px;
 }
 
@@ -2961,6 +2962,7 @@
 }
 [dir="rtl"].kore-chat-window #carousel-one-by-one{
     direction: ltr;
+    width: 100%;
 }
 
 [dir="rtl"].kore-chat-window .tablechart .tablechartDiv{
@@ -2977,7 +2979,8 @@
 
 [dir="rtl"].kore-chat-window .carouselTitleBox .carouselTitle{
     margin: 8px 11px 0px 0px;
-    text-align: right;
+    text-align: right;//center !important;
+
 }
 [dir="rtl"].kore-chat-window .carouselTitleBox .carouselDescription{
     margin: 8px 11px 0px 0px;
